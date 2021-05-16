@@ -24,4 +24,9 @@ public class RestTemplateClient {
 		return restTemplate.getForEntity(URL.INGREDIENTS.toString(),
 				(Class<? extends ArrayList<Ingredient>>)ArrayList.class);
 	}
+	
+	public ResponseEntity<? extends ArrayList<Ingredient>> getTacos() {
+		return restTemplate.getForEntity(URL.INGREDIENTS.toString(),
+				(Class<? extends ArrayList<Ingredient>>)ArrayList.class);
+	} 
 }
